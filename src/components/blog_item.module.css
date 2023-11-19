@@ -1,0 +1,26 @@
+.blog_item {
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog_text {
+    font-size: var(--blog_text-font-size);
+}
+
+.title {
+    margin-bottom: 0px;
+    font-size: var(--title-font-size);
+    font-weight: bolder;
+    color: #10dbff;
+}
+  
+.pub_date {
+    font-size: var(--date-font-size);
+    padding-left: 5px;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+    overflow:auto;
+    color: white;
+}
