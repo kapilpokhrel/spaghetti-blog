@@ -1,10 +1,8 @@
 ---
-title: "Placeholder Blog"
-date: "2023-11-20"
-desc: "A blog about a palceholder blog"
+title: 'Placeholder Blog'
+date: '2023-11-20'
+desc: 'A blog about a palceholder blog'
 ---
-
-# Placeholder Blog
 
 ## What are placeholder blog?
 
@@ -12,6 +10,19 @@ Placeholder blog is the blog which is placed to show how the blog site/page will
 
 This is used often in new blogs when the creator hasn't written any blog yet. You can think of it as a **lorem ipsum of a blog site**. (I guess, that's what I did.)
 
+These blogs can contain code segmens like:
+
+```python
+print('This is a python code')
+```
+
+or a table like:
+| S.N | Blogs | Date |
+|:---:|:-----:|:----:|
+| 1 | Placeholder Blog | 2023-11-20 |
+
+to show that they might look in other future blogs.
+
 An example of a placeholder blog would be this blog. (Self refrencing blog, nice)
 
-<img src='placeholder_bot_meme.jpg' height='600'>
+![placeholder_blog_meme](/images/placeholder_bot_meme.jpg)

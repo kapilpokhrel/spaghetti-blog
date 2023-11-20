@@ -13,8 +13,12 @@
     "next": "14.0.3",
     "react": "^18",
     "react-dom": "^18",
+    "rehype-stringify": "^10.0.0",
     "remark": "^15.0.1",
-    "remark-html": "^16.0.1"
+    "remark-gfm": "^4.0.0",
+    "remark-parse": "^11.0.0",
+    "remark-rehype": "^11.0.0",
+    "remark-torchlight": "^0.0.5"
   },
   "devDependencies": {
     "eslint": "^8",
