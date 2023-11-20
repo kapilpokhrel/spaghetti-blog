@@ -1,9 +1,13 @@
-import Blog_item from "@/components/blog_item"
+import Blog_item from '@/components/blog_item';
+import { getSortedPostsData } from '@/utils/posts';
 
 export default function Home() {
+  const posts = getSortedPostsData();
   return (
     <div>
-      <Blog_item title={'Title 1: How does this work?'} date='1969-06-09' text='lorem ipsum'></Blog_item>
+      {posts.map(({ id, date, title, desc }) => (
+        <Blog_item key={id} title={title} date={date} text={desc}></Blog_item>
+      ))}
     </div>
-  )
+  );
 }

@@ -26,8 +26,8 @@ body {
   :root {
     --header-font-size: 38px;
     --blog_text-font-size: 20px;
-  --title-font-size: 30px;
-  --date-font-size: 15px;
+    --title-font-size: 30px;
+    --date-font-size: 15px;
     --container-max-width: 475px;
   }
 }
