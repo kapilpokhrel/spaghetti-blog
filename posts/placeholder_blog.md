@@ -10,18 +10,24 @@ Placeholder blog is the blog which is placed to show how the blog site/page will
 
 This is used often in new blogs when the creator hasn't written any blog yet. You can think of it as a **lorem ipsum of a blog site**. (I guess, that's what I did.)
 
-These blogs can contain code segmens like:
+These blogs can contain code segmens, tables, quote to show that they might look in other future blogs.
+
+#### Code:
 
 ```python
 print('This is a python code')
 ```
+
+#### Table:
 
 or a table like:
 | S.N | Blogs | Date |
 |:---:|:-----:|:----:|
 | 1 | Placeholder Blog | 2023-11-20 |
 
-to show that they might look in other future blogs.
+#### Quote:
+
+> This is a quote.
 
 An example of a placeholder blog would be this blog. (Self refrencing blog, nice)
 

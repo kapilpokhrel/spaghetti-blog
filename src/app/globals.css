@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --header-font-size: 36px;
   --blog_text-font-size: 18px;

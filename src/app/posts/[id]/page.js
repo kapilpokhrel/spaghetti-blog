@@ -19,7 +19,11 @@ export default async function Page({ params }) {
     <Blog_item
       title={postData.title}
       date={postData.date}
-      text={<div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />}
+      text={
+        <article className='prose prose-slate dark:prose-invert'>
+          {<div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />}
+        </article>
+      }
     ></Blog_item>
   );
 }
