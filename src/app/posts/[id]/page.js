@@ -1,5 +1,6 @@
 import { getAllPostIds, getPostData } from '@/utils/posts';
 import Blog_item from '@/components/blog_item';
+import 'highlight.js/styles/github-dark.css';
 
 export async function generateStaticParams() {
   const posts = getAllPostIds();
@@ -20,8 +21,8 @@ export default async function Page({ params }) {
       title={postData.title}
       date={postData.date}
       text={
-        <article className='prose prose-slate dark:prose-invert'>
-          {<div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />}
+        <article className='prose sm:prose-md md:prose-lg lg:prose-xl prose-slate dark:prose-invert'>
+          {postData.content}
         </article>
       }
     ></Blog_item>

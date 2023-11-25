@@ -1,12 +1,11 @@
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
-import { remark } from 'remark';
-import rehypeStringify from 'rehype-stringify';
 import remarkGfm from 'remark-gfm';
-import remarkParse from 'remark-parse';
-import remarkRehype from 'remark-rehype';
-import remarkTorchlight from 'remark-torchlight';
+import { compileMDX } from 'next-mdx-remote/rsc';
+import rehypeAutolinkHeadings from 'rehype-autolink-headings';
+import rehypeHighlight from 'rehype-highlight';
+import rehypeSlug from 'rehype-slug';
 
 const postsDirectory = path.join(process.cwd(), 'posts');
 
@@ -15,7 +14,7 @@ export function getSortedPostsData() {
   const fileNames = fs.readdirSync(postsDirectory);
   const allPostsData = fileNames.map((fileName) => {
     // Remove ".md" from file name to get id
-    const id = fileName.replace(/\.md$/, '');
+    const id = fileName.replace(/\.mdx$/, '');
 
     // Read markdown file as string
     const fullPath = path.join(postsDirectory, fileName);
@@ -46,26 +45,32 @@ export function getAllPostIds() {
 }
 
 export async function getPostData(id) {
-  const fullPath = path.join(postsDirectory, `${id}.md`);
+  const fullPath = path.join(postsDirectory, `${id}.mdx`);
   const fileContents = fs.readFileSync(fullPath, 'utf8');
 
-  // Use gray-matter to parse the post metadata section
-  const matterResult = matter(fileContents);
+  const components = {
+    pre: (props) => <pre className='not-prose' {...props} />,
+  };
 
-  // Use remark to convert markdown into HTML string
-  const processedContent = await remark()
-    .use(remarkParse)
-    .use(remarkGfm)
-    .use(remarkTorchlight)
-    .use(remarkRehype)
-    .use(rehypeStringify)
-    .process(matterResult.content);
-  const contentHtml = processedContent.toString();
+  const { frontmatter, content } = await compileMDX({
+    source: fileContents,
+    components: { ...components },
+    options: {
+      parseFrontmatter: true,
+      mdxOptions: {
+        remarkPlugins: [remarkGfm],
+        rehypePlugins: [
+          rehypeHighlight,
+          rehypeSlug,
+          [rehypeAutolinkHeadings, { behaviour: 'wrap' }],
+        ],
+      },
+    },
+  });
 
-  // Combine the data with the id and contentHtml
   return {
     id,
-    contentHtml,
-    ...matterResult.data,
+    content,
+    ...frontmatter,
   };
 }
