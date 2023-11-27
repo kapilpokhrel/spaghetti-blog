@@ -1,8 +1,18 @@
 import { getAllPostIds, getPostData } from '@/utils/posts';
 import Blog_item from '@/components/blog_item';
-import 'highlight.js/styles/github-dark.css';
+import 'highlight.js/styles/night-owl.css';
 import Link from 'next/link';
 import { londrina } from '@/components/fonts';
+
+export async function generateMetadata({ params }) {
+  const { id } = params;
+
+  const postData = await getPostData(id);
+  return {
+    title: postData.title,
+    description: postData.desc,
+  };
+}
 
 export async function generateStaticParams() {
   const posts = getAllPostIds();
@@ -24,7 +34,7 @@ export default async function Page({ params }) {
         title={postData.title}
         date={postData.date}
         text={
-          <article className='pb-[25px] border-b-[1px] border-white border-solid prose sm:prose-md md:prose-lg lg:prose-xl prose-slate prose-img:mx-auto dark:prose-invert'>
+          <article className='pb-[25px] border-b-[1px] border-white border-solid w-full max-w-none prose md:prose-lg lg:prose-xl prose-myblue prose-img:mx-auto dark:prose-invert'>
             {postData.content}
           </article>
         }

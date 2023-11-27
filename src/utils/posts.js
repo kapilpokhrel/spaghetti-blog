@@ -48,9 +48,7 @@ export async function getPostData(id) {
   const fullPath = path.join(postsDirectory, `${id}.mdx`);
   const fileContents = fs.readFileSync(fullPath, 'utf8');
 
-  const components = {
-    pre: (props) => <pre className='not-prose' {...props} />,
-  };
+  const components = {};
 
   const { frontmatter, content } = await compileMDX({
     source: fileContents,

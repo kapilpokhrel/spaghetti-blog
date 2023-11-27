@@ -1,4 +1,4 @@
-import { londrina, pt_serif, mukta } from './fonts';
+import { londrina, pt_serif, barlow } from './fonts';
 
 export default function Blog_item({ title, date, text, home }) {
   return (
@@ -14,7 +14,7 @@ export default function Blog_item({ title, date, text, home }) {
       >
         {date}
       </span>
-      <div className={`${mukta.className}`}>{text}</div>
+      <div className={`${barlow.className}`}>{text}</div>
     </div>
   );
 }

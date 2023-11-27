@@ -13,9 +13,9 @@ export default function Home() {
             title={title}
             date={date}
             text={
-              <span className='prose sm:prose-md md:prose-lg lg:prose-xl prose-slate dark:prose-invert'>
+              <div className='prose w-full md:prose-lg lg:prose-xl prose-myblue dark:prose-invert'>
                 {desc}
-              </span>
+              </div>
             }
           ></Blog_item>
         </Link>

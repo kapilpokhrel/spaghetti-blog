@@ -1,4 +1,4 @@
-import { Londrina_Solid, PT_Serif, Mukta } from 'next/font/google';
+import { Londrina_Solid, PT_Serif, Mukta, Barlow } from 'next/font/google';
 
 export const londrina = Londrina_Solid({
   subsets: ['latin'],
@@ -10,7 +10,7 @@ export const pt_serif = PT_Serif({
   weight: '400',
 });
 
-export const mukta = Mukta({
+export const barlow = Barlow({
   subsets: ['latin'],
-  weight: '400',
+  weight: ['400', '700'],
 });
