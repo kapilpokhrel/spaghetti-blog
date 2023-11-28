@@ -5,7 +5,6 @@ const site_blue = '#10dbff';
 module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
-    //extend: {},
     extend: {
       typography: {
         myblue: {
@@ -29,16 +28,12 @@ module.exports = {
               'background-color': night_owl_bg,
             },
             code: {
-              '&:before': {
-                content: '""',
-              },
-              '&:after': {
-                content: '""',
-              },
-              padding: '3px',
+              padding: '3px 5px 3px 5px',
               'border-radius': '5px',
               'background-color': night_owl_bg,
             },
+            'code::before': false,
+            'code::after': false,
           },
         },
         lg: {
@@ -54,16 +49,12 @@ module.exports = {
               'background-color': night_owl_bg,
             },
             code: {
-              '&:before': {
-                content: '""',
-              },
-              '&:after': {
-                content: '""',
-              },
-              padding: '3px',
+              padding: '3px 5px 3px 5px',
               'border-radius': '5px',
               'background-color': night_owl_bg,
             },
+            'code::before': false,
+            'code::after': false,
           },
         },
         xl: {
@@ -79,16 +70,12 @@ module.exports = {
               'background-color': night_owl_bg,
             },
             code: {
-              '&:before': {
-                content: '""',
-              },
-              '&:after': {
-                content: '""',
-              },
-              padding: '3px',
+              padding: '3px 5px 3px 5px',
               'border-radius': '5px',
               'background-color': night_owl_bg,
             },
+            'code::before': false,
+            'code::after': false,
           },
         },
       },
