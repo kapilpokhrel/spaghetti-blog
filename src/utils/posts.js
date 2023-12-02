@@ -51,7 +51,12 @@ export function getAllPostIds() {
 
 export async function getPostData(id) {
   const fullPath = path.join(postsDirectory, `${id}.mdx`);
-  const fileContents = fs.readFileSync(fullPath, 'utf8');
+  let fileContents = '';
+  try {
+    fileContents = fs.readFileSync(fullPath, 'utf8');
+  } catch (error) {
+    return undefined;
+  }
 
   const components = {};
 

@@ -8,6 +8,11 @@ export async function generateMetadata({ params }) {
   const { id } = params;
 
   const postData = await getPostData(id);
+  if (!postData) {
+    return {
+      title: 'Post Not Found',
+    };
+  }
   return {
     title: postData.title,
     description: postData.desc,
@@ -28,6 +33,8 @@ export default async function Page({ params }) {
   const { id } = params;
 
   const postData = await getPostData(id);
+  if (!postData) notFound();
+
   return (
     <>
       <Blog_item
