@@ -2,6 +2,7 @@
 title: 'Placeholder Blog'
 date: '2023-11-20'
 desc: 'A blog about a palceholder blog'
+keywords: ['placeholder blog', 'dummy blog', 'test blog']
 author: 'Kapil Pokhrel'
 author_links: { 'twitter': 'www.twitter.com/', 'github': 'www.github.com/' }
 ---

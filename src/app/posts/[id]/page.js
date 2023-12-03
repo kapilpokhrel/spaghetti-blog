@@ -17,6 +17,7 @@ export async function generateMetadata({ params }) {
   return {
     title: postData.title,
     description: postData.desc,
+    keywords: postData.keywords,
   };
 }
 
