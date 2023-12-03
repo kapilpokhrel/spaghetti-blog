@@ -8,6 +8,7 @@ export const londrina = Londrina_Solid({
 export const pt_serif = PT_Serif({
   subsets: ['latin'],
   weight: '400',
+  style: ['normal', 'italic'],
 });
 
 export const barlow = Barlow({

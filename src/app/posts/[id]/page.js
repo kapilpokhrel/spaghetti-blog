@@ -3,6 +3,7 @@ import Blog_item from '@/components/blog_item';
 import 'highlight.js/styles/night-owl.css';
 import Link from 'next/link';
 import { londrina } from '@/components/fonts';
+import Footer from '@/components/footer';
 
 export async function generateMetadata({ params }) {
   const { id } = params;
@@ -41,16 +42,15 @@ export default async function Page({ params }) {
         title={postData.title}
         date={postData.date}
         text={
-          <article className='pb-[25px] border-b-[1px] border-white border-solid w-full max-w-none prose md:prose-lg lg:prose-xl prose-myblue prose-img:mx-auto dark:prose-invert'>
+          <article className='pb-[42px] border-b-[1px] border-white border-solid w-full max-w-none prose md:prose-lg lg:prose-xl prose-myblue prose-img:mx-auto dark:prose-invert'>
             {postData.content}
           </article>
         }
       ></Blog_item>
-      <div
-        className={`container mb-24 font-bold text-[20px] min-[475px]:text-[22px] sm:text-[24px] md:text-[26px] ${londrina.className}`}
-      >
-        <Link href='/'>Home</Link>
-      </div>
+      <Footer
+        author={postData.author}
+        author_links={postData.author_links}
+      ></Footer>
     </>
   );
 }

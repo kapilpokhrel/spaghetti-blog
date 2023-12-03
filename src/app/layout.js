@@ -11,11 +11,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang='en' dark='true'>
       <body>
-        <Header>
-          <Link href='/'>
-            <span>Blogs</span>
-          </Link>
-        </Header>
+        <Header></Header>
         {children}
       </body>
     </html>
