@@ -1,6 +1,8 @@
 import './globals.css';
 import Header from '@/components/header';
-import Link from 'next/link';
+import { config } from '@fortawesome/fontawesome-svg-core';
+import '@fortawesome/fontawesome-svg-core/styles.css';
+config.autoAddCss = false;
 
 export const metadata = {
   title: "Kapil's Blog",

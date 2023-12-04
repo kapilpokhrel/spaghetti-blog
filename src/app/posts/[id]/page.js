@@ -1,8 +1,6 @@
 import { getAllPostIds, getPostData } from '@/utils/posts';
 import Blog_item from '@/components/blog_item';
 import 'highlight.js/styles/night-owl.css';
-import Link from 'next/link';
-import { londrina } from '@/components/fonts';
 import Footer from '@/components/footer';
 
 export async function generateMetadata({ params }) {

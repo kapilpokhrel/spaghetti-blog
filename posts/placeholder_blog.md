@@ -4,7 +4,7 @@ date: '2023-11-20'
 desc: 'A blog about a palceholder blog'
 keywords: ['placeholder blog', 'dummy blog', 'test blog']
 author: 'Kapil Pokhrel'
-author_links: { 'twitter': 'www.twitter.com/', 'github': 'www.github.com/' }
+author_links: { 'twitter': 'https://www.twitter.com/', 'github': 'https://www.github.com/' }
 ---
 
 ### What are placeholder blog?
@@ -25,7 +25,6 @@ print('This is a python code')
 
 #### Table:
 
-or a table like:
 | S.N | Blogs | Date |
 |:---:|:-----:|:----:|
 | 1 | Placeholder Blog | 2023-11-20 |

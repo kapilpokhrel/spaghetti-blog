@@ -1,16 +1,30 @@
 import { londrina, pt_serif } from './fonts';
 import Link from 'next/link';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faGithub,
+  faInstagram,
+  faXTwitter,
+  faLinkedin,
+  faTelegram,
+  faWhatsapp,
+} from '@fortawesome/free-brands-svg-icons';
 
 export default function Footer({ author, author_links, children }) {
+  const icons = {
+    github: faGithub,
+    twitter: faXTwitter,
+    instagram: faInstagram,
+    linkedin: faLinkedin,
+    telegram: faTelegram,
+    whatsapp: faWhatsapp,
+  };
   const links = [];
   Object.entries(author_links).forEach(([site, link]) => {
     links.push(
-      <div
-        key={`${site} link`}
-        className='p-1 m-1 rounded-full bg-green-800 w-6 h-6'
-      >
-        <Link href={link}></Link>
-      </div>
+      <Link key={`${site}-link`} href={link} className='p-1'>
+        <FontAwesomeIcon icon={icons[site]} />
+      </Link>
     );
   });
   return (
