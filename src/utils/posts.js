@@ -14,7 +14,7 @@ export function CustomImage({ src, w, h }) {
     <ExportedImage
       // Here the px are the css pixel but browser will calculate the appropirate image size based on the ratio of screen pixel to css pixel
       sizes='(min-width: 768px) 768px, (min-widht: 640px) 640px, (mind-width: 475px) 480px, 100vw'
-      src={`/images/${src}`}
+      src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/${src}`}
       width={w}
       height={h}
     />
