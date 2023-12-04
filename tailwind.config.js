@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 const night_owl_bg = '#011627';
 const site_blue = '#10dbff';
-
+const site_orange = '#fb923c';
 module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
@@ -9,10 +9,10 @@ module.exports = {
       typography: {
         myblue: {
           css: {
-            '--tw-prose-quote-borders': site_blue,
-            '--tw-prose-invert-quote-borders': site_blue,
-            '--tw-prose-links': site_blue,
-            '--tw-prose-invert-links': site_blue,
+            '--tw-prose-quote-borders': site_orange,
+            '--tw-prose-invert-quote-borders': site_orange,
+            '--tw-prose-links': site_orange,
+            '--tw-prose-invert-links': site_orange,
           },
         },
         DEFAULT: {

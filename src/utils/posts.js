@@ -7,6 +7,7 @@ import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import rehypeHighlight from 'rehype-highlight';
 import rehypeSlug from 'rehype-slug';
 import ExportedImage from 'next-image-export-optimizer';
+import Link from 'next/link';
 
 export function CustomImage({ src, w, h }) {
   return (
@@ -72,6 +73,7 @@ export async function getPostData(id) {
 
   const components = {
     CustomImage,
+    a: (props) => <Link target='_blank' rel='noreferrer noopener' {...props} />,
   };
 
   const { frontmatter, content } = await compileMDX({

@@ -5,8 +5,8 @@ import '@fortawesome/fontawesome-svg-core/styles.css';
 config.autoAddCss = false;
 
 export const metadata = {
-  title: "Kapil's Blog",
-  description: 'Blogs by Kapil Pokhrel',
+  title: 'Spaghetti-Blogs | Blogs by Kapil Pokhrel',
+  description: 'Random and tangled blogs by me.',
 };
 
 export default function RootLayout({ children }) {
