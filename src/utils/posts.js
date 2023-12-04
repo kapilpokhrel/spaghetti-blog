@@ -6,7 +6,19 @@ import { compileMDX } from 'next-mdx-remote/rsc';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import rehypeHighlight from 'rehype-highlight';
 import rehypeSlug from 'rehype-slug';
+import ExportedImage from 'next-image-export-optimizer';
 
+export function CustomImage({ src, w, h }) {
+  return (
+    <ExportedImage
+      // Here the px are the css pixel but browser will calculate the appropirate image size based on the ratio of screen pixel to css pixel
+      sizes='(min-width: 768px) 768px, (min-widht: 640px) 640px, (mind-width: 475px) 480px, 100vw'
+      src={`/images/${src}`}
+      width={w}
+      height={h}
+    />
+  );
+}
 const postsDirectory = path.join(process.cwd(), 'posts');
 
 export function getSortedPostsData() {
@@ -58,7 +70,9 @@ export async function getPostData(id) {
     return undefined;
   }
 
-  const components = {};
+  const components = {
+    CustomImage,
+  };
 
   const { frontmatter, content } = await compileMDX({
     source: fileContents,
