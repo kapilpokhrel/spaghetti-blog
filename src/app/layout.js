@@ -9,7 +9,7 @@ export const metadata = {
   title: 'Spaghetti-Blogs | Blogs by Kapil Pokhrel',
   description: 'Random and tangled blogs by me.',
   keywords: ['nextjs-blog', 'spaghetti-blog'],
-  verificatoin: {
+  verification: {
     google: 'NtaRlIYS0eNFkzGSX6PbsIBcVp303n8rmRfBpxIjtFw',
   },
 };
