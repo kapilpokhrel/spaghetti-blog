@@ -23,8 +23,8 @@ module.exports = {
             pre: {
               'padding-right': '10px',
               'padding-left': '10px',
-              'padding-top': '0',
-              'padding-bottom': '0',
+              'padding-top': '8px',
+              'padding-bottom': '8px',
               'background-color': night_owl_bg,
             },
             code: {
