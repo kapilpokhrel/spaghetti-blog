@@ -1,3 +1,5 @@
+'use client';
+
 import { londrina, pt_serif } from './fonts';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

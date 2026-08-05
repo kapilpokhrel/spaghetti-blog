@@ -6,15 +6,15 @@ import { compileMDX } from 'next-mdx-remote/rsc';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import rehypeHighlight from 'rehype-highlight';
 import rehypeSlug from 'rehype-slug';
-import ExportedImage from 'next-image-export-optimizer';
+import Image_viewer from '@/components/image_viewer';
 import Link from 'next/link';
 
-export function CustomImage({ src, w, h }) {
+export function CustomImage({ src, alt, w, h }) {
   return (
-    <ExportedImage
-      // Here the px are the css pixel but browser will calculate the appropirate image size based on the ratio of screen pixel to css pixel
+    <Image_viewer
       sizes='(min-width: 768px) 768px, (min-widht: 640px) 640px, (min-width: 475px) 480px, 100vw'
       src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/${src}`}
+      alt={alt}
       width={w}
       height={h}
     />

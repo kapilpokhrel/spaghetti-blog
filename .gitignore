@@ -35,5 +35,5 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-public/images/nextImageExportOptimizer
-public/images/next-image-export-optimizer-hashes.json
+nextImageExportOptimizer/
+next-image-export-optimizer-hashes.json

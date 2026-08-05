@@ -2,6 +2,7 @@
 module.exports = {
   siteUrl: process.env.SITE_URL || 'http://localhost:3000/',
   output: 'export',
+  trailingSlash: true,
   generateRobotsTxt: true,
   generateIndexSitemap: false,
   changefreq: 'weekly',
@@ -9,12 +10,15 @@ module.exports = {
     let freq = config.changefreq;
     let priority = config.priority;
 
-    if (path == '/') {
+    // Paths arrive with a trailing slash (see trailingSlash in next.config.js)
+    const route = path.length > 1 ? path.replace(/\/$/, '') : path;
+
+    if (route == '/') {
       //Homepage
       priority = 1;
-    } else if (path == '/posts') {
+    } else if (route == '/posts') {
       return null;
-    } else if (path.startsWith('/posts/')) {
+    } else if (route.startsWith('/posts/')) {
       priority = 0.9;
     }
 

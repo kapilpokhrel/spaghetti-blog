@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1700" font-family="Inter, ui-sans-serif, system-ui, sans-serif">
+<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10z" fill="context-stroke"/></marker><style> text{font-variant-ligatures:none} </style></defs>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="220" y="48" text-anchor="middle" font-size="15" font-weight="700" fill="#111827">Client</text>
+<text x="220" y="66" text-anchor="middle" font-size="12" font-family="ui-monospace,monospace" fill="#6b7280">Clients :34034 &amp;amp :34048</text>
+<line x1="220" y1="76" x2="220" y2="2445" stroke="#e5e7eb" stroke-width="1.4"/>
+<text x="630" y="48" text-anchor="middle" font-size="15" font-weight="700" fill="#111827">Proxy</text>
+<text x="630" y="66" text-anchor="middle" font-size="12" font-family="ui-monospace,monospace" fill="#6b7280">Internal (:5000) &amp; External (:51870)</text>
+<line x1="630" y1="76" x2="630" y2="2445" stroke="#e5e7eb" stroke-width="1.4"/>
+<text x="1040" y="48" text-anchor="middle" font-size="15" font-weight="700" fill="#111827">Backend</text>
+<text x="1040" y="66" text-anchor="middle" font-size="12" font-family="ui-monospace,monospace" fill="#6b7280">:8000</text>
+<line x1="1040" y1="76" x2="1040" y2="2445" stroke="#e5e7eb" stroke-width="1.4"/>
+<rect x="110" y="76" width="220" height="2369" fill="#fcfcfd"/>
+<rect x="460" y="76" width="340" height="2369" fill="#fcfdff"/>
+<rect x="930" y="76" width="220" height="2369" fill="#fcfcfd"/>
+<line x1="220" y1="76" x2="220" y2="2445" stroke="#e5e7eb" stroke-width="1.4" stroke-dasharray="5 5"/>
+<line x1="630" y1="76" x2="630" y2="2445" stroke="#e5e7eb" stroke-width="1.4" stroke-dasharray="5 5"/>
+<line x1="1040" y1="76" x2="1040" y2="2445" stroke="#e5e7eb" stroke-width="1.4" stroke-dasharray="5 5"/>
+<text x="18" y="109" font-size="11" fill="#9aa0aa" font-family="ui-monospace,monospace">#1</text>
+<text x="18" y="93" font-size="10" fill="#b8bec8" font-family="ui-monospace,monospace">5.888s</text>
+<text x="425.0" y="119" text-anchor="middle" font-size="10.5" fill="#b45309" font-weight="600">GET / HTTP/1.1</text>
+<line x1="226" y1="105" x2="622" y2="105" stroke="#b45309" stroke-width="2.3" />
+<polygon points="622,105 615,101.5 615,108.5" fill="#b45309"/>
+<text x="220" y="121" text-anchor="middle" font-size="10" fill="#7c3aed" font-family="ui-monospace,monospace">:34034</text>
+<text x="18" y="199" font-size="11" fill="#9aa0aa" font-family="ui-monospace,monospace">#2</text>
+<text x="18" y="183" font-size="10" fill="#b8bec8" font-family="ui-monospace,monospace">5.889s</text>
+<text x="835.0" y="171" text-anchor="middle" font-size="11" font-family="ui-monospace,monospace" fill="#4b5563" font-weight="600">SYN  ·  0B</text>
+<text x="835.0" y="186" text-anchor="middle" font-size="11" font-family="ui-monospace,monospace" fill="#374151">Seq=0</text>
+<line x1="636" y1="195" x2="1032" y2="195" stroke="#4b5563" stroke-width="1.6" />
+<polygon points="1032,195 1025,191.5 1025,198.5" fill="#4b5563"/>
+<text x="18" y="289" font-size="11" fill="#9aa0aa" font-family="ui-monospace,monospace">#3</text>
+<text x="18" y="273" font-size="10" fill="#b8bec8" font-family="ui-monospace,monospace">5.889s</text>
+<text x="835.0" y="261" text-anchor="middle" font-size="11" font-family="ui-monospace,monospace" fill="#4b5563" font-weight="600">SYN, ACK  ·  0B</text>
+<text x="835.0" y="276" text-anchor="middle" font-size="11" font-family="ui-monospace,monospace" fill="#374151">Seq=0  Ack=1</text>
+<line x1="1034" y1="285" x2="638" y2="285" stroke="#4b5563" stroke-width="1.6" />
+<polygon points="638,285 645,281.5 645,288.5" fill="#4b5563"/>
+<text x="18" y="379" font-size="11" fill="#9aa0aa" font-family="ui-monospace,monospace">#4</text>
+<text x="18" y="363" font-size="10" fill="#b8bec8" font-family="ui-monospace,monospace">5.889s</text>
+<text x="835.0" y="351" text-anchor="middle" font-size="11" font-family="ui-monospace,monospace" fill="#4b5563" font-weight="600">ACK  ·  0B</text>
+<text x="835.0" y="366" text-anchor="middle" font-size="11" font-family="ui-monospace,monospace" fill="#374151">Seq=1  Ack=1</text>
+<line x1="636" y1="375" x2="1032" y2="375" stroke="#4b5563" stroke-width="1.6" />
+<polygon points="1032,375 1025,371.5 1025,378.5" fill="#4b5563"/>
+<text x="18" y="469" font-size="11" fill="#9aa0aa" font-family="ui-monospace,monospace">#5</text>
+<text x="18" y="453" font-size="10" fill="#b8bec8" font-family="ui-monospace,monospace">5.889s</text>
+<text x="835.0" y="441" text-anchor="middle" font-size="11" font-family="ui-monospace,monospace" fill="#2563eb" font-weight="600">PSH, ACK  ·  8192B</text>
+<text x="835.0" y="456" text-anchor="middle" font-size="11" font-family="ui-monospace,monospace" fill="#374151">Seq=1  Ack=1</text>
+<text x="835.0" y="479" text-anchor="middle" font-size="10.5" fill="#2563eb" font-weight="600">8KB body</text>
+<line x1="636" y1="465" x2="1032" y2="465" stroke="#2563eb" stroke-width="2.0" />
+<polygon points="1032,465 1025,461.5 1025,468.5" fill="#2563eb"/>
+<text x="18" y="559" font-size="11" fill="#9aa0aa" font-family="ui-monospace,monospace">#6</text>
+<text x="18" y="543" font-size="10" fill="#b8bec8" font-family="ui-monospace,monospace">5.889s</text>
+<text x="835.0" y="531" text-anchor="middle" font-size="11" font-family="ui-monospace,monospace" fill="#4b5563" font-weight="600">ACK  ·  0B</text>
+<text x="835.0" y="546" text-anchor="middle" font-size="11" font-family="ui-monospace,monospace" fill="#374151">Seq=1  Ack=8193</text>
+<line x1="1034" y1="555" x2="638" y2="555" stroke="#4b5563" stroke-width="1.6" />
+<polygon points="638,555 645,551.5 645,558.5" fill="#4b5563"/>
+<text x="18" y="649" font-size="11" fill="#9aa0aa" font-family="ui-monospace,monospace">#7</text>
+<text x="18" y="633" font-size="10" fill="#b8bec8" font-family="ui-monospace,monospace">5.889s</text>
+<text x="835.0" y="621" text-anchor="middle" font-size="11" font-family="ui-monospace,monospace" fill="#b45309" font-weight="600">PSH, ACK  ·  72B</text>
+<text x="835.0" y="636" text-anchor="middle" font-size="11" font-family="ui-monospace,monospace" fill="#374151">Seq=8193  Ack=1</text>
+<text x="835.0" y="659" text-anchor="middle" font-size="10.5" fill="#b45309" font-weight="600">HTTP req tail</text>
+<line x1="636" y1="645" x2="1032" y2="645" stroke="#b45309" stroke-width="2.3" />
+<polygon points="1032,645 1025,641.5 1025,648.5" fill="#b45309"/>
+<text x="18" y="739" font-size="11" fill="#9aa0aa" font-family="ui-monospace,monospace">#8</text>
+<text x="18" y="723" font-size="10" fill="#b8bec8" font-family="ui-monospace,monospace">5.889s</text>
+<text x="835.0" y="711" text-anchor="middle" font-size="11" font-family="ui-monospace,monospace" fill="#4b5563" font-weight="600">ACK  ·  0B</text>
+<text x="835.0" y="726" text-anchor="middle" font-size="11" font-family="ui-monospace,monospace" fill="#374151">Seq=1  Ack=8265</text>
+<line x1="1034" y1="735" x2="638" y2="735" stroke="#4b5563" stroke-width="1.6" />
+<polygon points="638,735 645,731.5 645,738.5" fill="#4b5563"/>
+<text x="18" y="829" font-size="11" fill="#9aa0aa" font-family="ui-monospace,monospace">#9</text>
+<text x="18" y="813" font-size="10" fill="#b8bec8" font-family="ui-monospace,monospace">5.889s</text>
+<text x="835.0" y="801" text-anchor="middle" font-size="11" font-family="ui-monospace,monospace" fill="#b45309" font-weight="600">PSH, ACK  ·  128B</text>
+<text x="835.0" y="816" text-anchor="middle" font-size="11" font-family="ui-monospace,monospace" fill="#374151">Seq=1  Ack=8265</text>
+<text x="835.0" y="839" text-anchor="middle" font-size="10.5" fill="#b45309" font-weight="600">HTTP/1.1 200 OK</text>
+<line x1="1034" y1="825" x2="638" y2="825" stroke="#b45309" stroke-width="2.3" />
+<polygon points="638,825 645,821.5 645,828.5" fill="#b45309"/>
+<text x="18" y="919" font-size="11" fill="#9aa0aa" font-family="ui-monospace,monospace">#10</text>
+<text x="18" y="903" font-size="10" fill="#b8bec8" font-family="ui-monospace,monospace">5.889s</text>
+<text x="835.0" y="891" text-anchor="middle" font-size="11" font-family="ui-monospace,monospace" fill="#4b5563" font-weight="600">ACK  ·  0B</text>
+<text x="835.0" y="906" text-anchor="middle" font-size="11" font-family="ui-monospace,monospace" fill="#374151">Seq=8265  Ack=129</text>
+<line x1="636" y1="915" x2="1032" y2="915" stroke="#4b5563" stroke-width="1.6" />
+<polygon points="1032,915 1025,911.5 1025,918.5" fill="#4b5563"/>
+<text x="18" y="1009" font-size="11" fill="#9aa0aa" font-family="ui-monospace,monospace">#11</text>
+<text x="18" y="993" font-size="10" fill="#b8bec8" font-family="ui-monospace,monospace">5.889s</text>
+<text x="425.0" y="1019" text-anchor="middle" font-size="10.5" fill="#b45309" font-weight="600">HTTP/1.1 200 OK</text>
+<line x1="624" y1="1005" x2="228" y2="1005" stroke="#b45309" stroke-width="2.3" />
+<polygon points="228,1005 235,1001.5 235,1008.5" fill="#b45309"/>
+<text x="220" y="1021" text-anchor="middle" font-size="10" fill="#7c3aed" font-family="ui-monospace,monospace">:34034</text>
+<text x="18" y="1099" font-size="11" fill="#9aa0aa" font-family="ui-monospace,monospace">#12</text>
+<text x="18" y="1083" font-size="10" fill="#b8bec8" font-family="ui-monospace,monospace">5.889s</text>
+<text x="425.0" y="1109" text-anchor="middle" font-size="10.5" fill="#b45309" font-weight="600">GET / HTTP/1.1</text>
+<line x1="226" y1="1095" x2="622" y2="1095" stroke="#b45309" stroke-width="2.3" />
+<polygon points="622,1095 615,1091.5 615,1098.5" fill="#b45309"/>
+<text x="220" y="1111" text-anchor="middle" font-size="10" fill="#7c3aed" font-family="ui-monospace,monospace">:34048</text>
+<text x="18" y="1189" font-size="11" fill="#9aa0aa" font-family="ui-monospace,monospace">#13</text>
+<text x="18" y="1173" font-size="10" fill="#b8bec8" font-family="ui-monospace,monospace">5.889s</text>
+<text x="835.0" y="1161" text-anchor="middle" font-size="11" font-family="ui-monospace,monospace" fill="#2563eb" font-weight="600">PSH, ACK  ·  8192B</text>
+<text x="835.0" y="1176" text-anchor="middle" font-size="11" font-family="ui-monospace,monospace" fill="#374151">Seq=8265  Ack=129</text>
+<text x="835.0" y="1199" text-anchor="middle" font-size="10.5" fill="#2563eb" font-weight="600">8KB body</text>
+<line x1="636" y1="1185" x2="1032" y2="1185" stroke="#2563eb" stroke-width="2.0" />
+<polygon points="1032,1185 1025,1181.5 1025,1188.5" fill="#2563eb"/>
+<text x="18" y="1279" font-size="11" fill="#9aa0aa" font-family="ui-monospace,monospace">#14</text>
+<text x="18" y="1263" font-size="10" fill="#b8bec8" font-family="ui-monospace,monospace">5.889s</text>
+<text x="835.0" y="1251" text-anchor="middle" font-size="11" font-family="ui-monospace,monospace" fill="#4b5563" font-weight="600">ACK  ·  0B</text>
+<text x="835.0" y="1266" text-anchor="middle" font-size="11" font-family="ui-monospace,monospace" fill="#374151">Seq=129  Ack=16457</text>
+<text x="835.0" y="1289" text-anchor="middle" font-size="10.5" fill="#059669" font-weight="600">immediate ACK</text>
+<line x1="1034" y1="1275" x2="638" y2="1275" stroke="#4b5563" stroke-width="1.6" />
+<polygon points="638,1275 645,1271.5 645,1278.5" fill="#4b5563"/>
+<text x="18" y="1369" font-size="11" fill="#9aa0aa" font-family="ui-monospace,monospace">#15</text>
+<text x="18" y="1353" font-size="10" fill="#b8bec8" font-family="ui-monospace,monospace">5.889s</text>
+<text x="835.0" y="1341" text-anchor="middle" font-size="11" font-family="ui-monospace,monospace" fill="#b45309" font-weight="600">PSH, ACK  ·  72B</text>
+<text x="835.0" y="1356" text-anchor="middle" font-size="11" font-family="ui-monospace,monospace" fill="#374151">Seq=16457  Ack=129</text>
+<text x="835.0" y="1379" text-anchor="middle" font-size="10.5" fill="#b45309" font-weight="600">HTTP req tail</text>
+<line x1="636" y1="1365" x2="1032" y2="1365" stroke="#b45309" stroke-width="2.3" />
+<polygon points="1032,1365 1025,1361.5 1025,1368.5" fill="#b45309"/>
+<text x="18" y="1459" font-size="11" fill="#9aa0aa" font-family="ui-monospace,monospace">#16</text>
+<text x="18" y="1443" font-size="10" fill="#b8bec8" font-family="ui-monospace,monospace">5.889s</text>
+<text x="835.0" y="1431" text-anchor="middle" font-size="11" font-family="ui-monospace,monospace" fill="#4b5563" font-weight="600">ACK  ·  0B</text>
+<text x="835.0" y="1446" text-anchor="middle" font-size="11" font-family="ui-monospace,monospace" fill="#374151">Seq=129  Ack=16529</text>
+<line x1="1034" y1="1455" x2="638" y2="1455" stroke="#4b5563" stroke-width="1.6" />
+<polygon points="638,1455 645,1451.5 645,1458.5" fill="#4b5563"/>
+<text x="18" y="1549" font-size="11" fill="#9aa0aa" font-family="ui-monospace,monospace">#17</text>
+<text x="18" y="1533" font-size="10" fill="#b8bec8" font-family="ui-monospace,monospace">5.889s</text>
+<text x="835.0" y="1521" text-anchor="middle" font-size="11" font-family="ui-monospace,monospace" fill="#b45309" font-weight="600">PSH, ACK  ·  128B</text>
+<text x="835.0" y="1536" text-anchor="middle" font-size="11" font-family="ui-monospace,monospace" fill="#374151">Seq=129  Ack=16529</text>
+<text x="835.0" y="1559" text-anchor="middle" font-size="10.5" fill="#b45309" font-weight="600">HTTP/1.1 200 OK</text>
+<line x1="1034" y1="1545" x2="638" y2="1545" stroke="#b45309" stroke-width="2.3" />
+<polygon points="638,1545 645,1541.5 645,1548.5" fill="#b45309"/>
+<text x="18" y="1639" font-size="11" fill="#9aa0aa" font-family="ui-monospace,monospace">#18</text>
+<text x="18" y="1623" font-size="10" fill="#b8bec8" font-family="ui-monospace,monospace">5.889s</text>
+<text x="425.0" y="1649" text-anchor="middle" font-size="10.5" fill="#b45309" font-weight="600">HTTP/1.1 200 OK</text>
+<line x1="624" y1="1635" x2="228" y2="1635" stroke="#b45309" stroke-width="2.3" />
+<polygon points="228,1635 235,1631.5 235,1638.5" fill="#b45309"/>
+<text x="220" y="1651" text-anchor="middle" font-size="10" fill="#7c3aed" font-family="ui-monospace,monospace">:34048</text>
+<text x="630" y="1040" text-anchor="middle" font-size="11.5" fill="#059669" font-weight="600">proxy connection (:51870) pooled</text>
+<text x="630" y="1150" text-anchor="middle" font-size="11.5" fill="#059669" font-weight="600">proxy connection (:51870) reused</text>
+<text x="630" y="1685" text-anchor="middle" font-size="12" fill="#16a34a" font-weight="600">quick_ack: no Nagle stall</text>
+</svg>

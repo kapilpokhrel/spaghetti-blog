@@ -1,6 +1,5 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+@config '../../tailwind.config.js';
 
 body {
   background-color: #282c35;
@@ -11,4 +10,16 @@ body {
   width: 100%;
   @apply min-[475px]:max-w-[475px] sm:max-w-[640px] md:max-w-[768px];
   @apply ml-auto mr-auto px-4 box-border;
+}
+
+/* Tables used to compare diagrams: give every column the same width so images
+   of equal aspect ratio also come out the same height. Header text length
+   would otherwise skew the columns. Text-only tables keep auto sizing. */
+.prose table:has(img) {
+  width: 100%;
+  table-layout: fixed;
+}
+
+.prose table:has(img) img {
+  width: 100%;
 }

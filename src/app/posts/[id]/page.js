@@ -2,9 +2,10 @@ import { getAllPostIds, getPostData } from '@/utils/posts';
 import Blog_item from '@/components/blog_item';
 import 'highlight.js/styles/night-owl.css';
 import Footer from '@/components/footer';
+import { notFound } from 'next/navigation';
 
 export async function generateMetadata({ params }) {
-  const { id } = params;
+  const { id } = await params;
 
   const postData = await getPostData(id);
   if (!postData) {
@@ -30,7 +31,7 @@ export async function generateStaticParams() {
 // Multiple versions of this page will be statically generated
 // using the `params` returned by `generateStaticParams`
 export default async function Page({ params }) {
-  const { id } = params;
+  const { id } = await params;
 
   const postData = await getPostData(id);
   if (!postData) notFound();
