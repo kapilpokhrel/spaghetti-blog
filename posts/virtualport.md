@@ -1,5 +1,5 @@
 ---
-title: 'How you can create a virtual serial port and null modem emulator in Linux'
+title: 'How can you create a virtual serial port and null modem emulator in Linux'
 date: '2024-02-01'
 desc: 'A detail guide to create and use a virtual serial port/ RS232 port in Linux using socat and tty0tty'
 keywords: ['serial port', 'virtual serial port in linux', 'rs232', 'socat', 'tty0tty', 'null modem', 'null modem emulator in linux', 'how to install tty0tty', 'uart', 'virtual uart port in linux']
