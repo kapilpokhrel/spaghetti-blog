@@ -12,8 +12,9 @@ Ytcanal was the YouTube video converter/downloader site which used pipes to achi
 
 To many of you who don't know, YtCanal was a online fully-featured youtube downloader I made for myself and it ended up being loved by others too. I am using past tense here as we had to take it down because of YouTube's warning letter to cease the service. I would also like to say sorry for losing the repository with the server, but it was quite simple.
 
-### Content
-Anyways, the method I used to get instantaneous downloads was to stream the video to the user simultaneous as it was being downloaded and processed in the server.
+### Working
+Anyways, the method I used to get instantaneous downloads was to stream the video to the user simultaneously as it was being downloaded and processed in the server.
+It's that simple.
 <CustomImage src='process_high_level.png' w='1920' h='1080'/>
 
 Now that we know that the server streamed the video in real time. Let's see in detail, how exactly it was done. To build YtCanal, I used flask and in flask, you can send real time data with [Response object](https://tedboy.github.io/flask/generated/generated/flask.Response.html).  Here's how it looks. Of course, the code shown in this article are not meant to be copied. These are just to give the basic idea.
@@ -21,7 +22,10 @@ Now that we know that the server streamed the video in real time. Let's see in d
 response = Response(generator(), headers=headers, mimetype=mime, content_type='video/mp4')
 return response
 ```
+
+It is just HTTP's `Transfer-Encoding: chunked`.
 What is does is that it opens the connection with a browser and calls the [generator function](https://realpython.com/introduction-to-python-generators/#example-1-reading-large-files). Every yield from the generator is directly streamed to the browser and this way, you can send the large file piece by piece.
+
 Lets take a closer look at a generator function used for video processing and see how it download and generate new processed video in small chunks.
 ```python
 def generator():
@@ -78,13 +82,15 @@ def generator():
 	
 	
 ```
-For every video user requests, we first get the video and audio url provided by the YouTube. (YouTube provides separate URL for audio and video and we have to combine them in the end). In YtCanal, I used [pytube](https://github.com/pytube/pytube) to accomplish this. After that, we make two named pipes, also called [fifo](https://docs.python.org/3/library/os.html#os.mkfifo). With these pipes opened, we create two separate thread to download audio and video and pass them with the pipes we just created. These threads will download the content from the internet and in chunks and write that into a pipe.
+For every video user requests, we first get the video and audio url provided by the YouTube. (YouTube provides separate URL for audio and video and we have to combine them in the end). In YtCanal, I used [pytube](https://github.com/pytube/pytube) to accomplish this. After that, we make two named pipes, also called [fifo](https://docs.python.org/3/library/os.html#os.mkfifo). With these pipes opened, we create two separate thread to download audio and video and pass them to the pipes we just created. These threads will download the content from the internet and in chunks and write that into a pipe.
 <CustomImage src='process_server_level.png' w='4973' h='3473' />
 
-Next, we start a ffmpeg process and use the audio and video pipes as the input for ffmpeg. Ffmpeg will gradually take the audio and video content from those pipes  and process and mix the audio video together (called muxing) to generate a new video. We passed the `'pipe:'` flag in ffmpeg so it will write the output of the video directly to its standard output.(You can also use stdin as a input for video instead of creating a named pipe, see more about pipes in ffmpeg [here](https://ffmpeg.org/ffmpeg-protocols.html#pipe)) Finally, we read the standard output of the ffmpeg process from our generator in 64KB chunks and yield that to be sent to the browser.
+
+Next, we start a `ffmpeg process`. `ffmpeg` is where all of this is centered (and `mp4` format); the fact that mp4 can be generated progressively as data comes and the ffmpeg supports this is what we are depending on.
+We use the audio and video pipes as the input for ffmpeg. Ffmpeg will gradually take the audio and video content from those pipes  and process and mix the audio video together (called muxing) to generate a new video. We passed the `'pipe:'` flag in ffmpeg so it will write the output of the video directly to its standard output.(You can also use stdin as a input for video instead of creating a named pipe, see more about pipes in ffmpeg [here](https://ffmpeg.org/ffmpeg-protocols.html#pipe)) Finally, we read the standard output of the ffmpeg process from our generator in 64KB chunks and yield that to be sent to the browser.
 
 ### Problem I encountered with this approach
-One problem I encountered with this approach is to determine the file size. Since, we are streaming the video in real time while it is being generated, I couldn't figure out the actual file size of the processed video before hand. Due to this, I was unable to set the content-length header wile sending the response and it resulted in the downloads like this where it didn't show how much time and file is remaining to download.
+One problem I encountered with this approach is to determine the file size. Since, we are progressively generating the video in real time, I couldn't figure out the actual file size of the processed video before hand. Due to this, I was unable to set the content-length header wile sending the response and it resulted in the downloads like this where it didn't show how much time and file is remaining to download.
 <CustomImage src='download_status.png' w='590' h='66' />
 
 
