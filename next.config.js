@@ -2,6 +2,7 @@
  * @type {import('next').NextConfig}
  */
 const nextConfig = {
+  serverExternalPackages: ['rehype-mathjax', 'mathjax-full'],
   output: 'export',
   distDir: 'out',
   // Emit posts/<id>/index.html instead of posts/<id>.html, so a plain static

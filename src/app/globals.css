@@ -23,3 +23,17 @@ body {
 .prose table:has(img) img {
   width: 100%;
 }
+
+/* MathJax emits plain <svg>, which Tailwind's preflight resets to display:block.
+   That drops inline math onto its own line and stops MathJax's own
+   text-align:center from reaching display math. Restore the browser default. */
+mjx-container > svg {
+  display: inline;
+}
+
+/* scroll the equation instead of pushing the whole page sideways for large eqn */
+mjx-container[display='true'] {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.2em 0;
+}

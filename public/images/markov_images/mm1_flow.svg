@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-42 -81 964 163" font-family="Inter, ui-sans-serif, system-ui, sans-serif">
+<defs>
+<marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10z" fill="context-stroke"/></marker>
+<style> text{font-variant-ligatures:none} </style>
+</defs>
+<rect x="-42" y="-81" width="964" height="163" fill="#ffffff"/>
+<circle cx="0.0" cy="0.0" r="26" fill="#ffffff" stroke="#374151" stroke-width="2"/>
+<text x="0.0" y="5.9" text-anchor="middle" font-size="17" font-family="ui-serif, Georgia, Cambria, &quot;Times New Roman&quot;, serif" font-style="italic" fill="#111827"><tspan dy="0.00" font-style="normal">0</tspan></text>
+<circle cx="168.0" cy="0.0" r="26" fill="#ffffff" stroke="#374151" stroke-width="2"/>
+<text x="168.0" y="5.9" text-anchor="middle" font-size="17" font-family="ui-serif, Georgia, Cambria, &quot;Times New Roman&quot;, serif" font-style="italic" fill="#111827"><tspan dy="0.00" font-style="normal">1</tspan></text>
+<circle cx="336.0" cy="0.0" r="26" fill="#ffffff" stroke="#374151" stroke-width="2"/>
+<text x="336.0" y="5.9" text-anchor="middle" font-size="17" font-family="ui-serif, Georgia, Cambria, &quot;Times New Roman&quot;, serif" font-style="italic" fill="#111827"><tspan dy="0.00" font-style="normal">2</tspan></text>
+<text x="440.2" y="7.0" text-anchor="middle" font-size="21" font-family="ui-serif, Georgia, Cambria, &quot;Times New Roman&quot;, serif" font-style="italic" fill="#111827"><tspan dy="0.00" font-style="normal">⋯</tspan></text>
+<circle cx="544.3" cy="0.0" r="26" fill="#ffffff" stroke="#374151" stroke-width="2"/>
+<text x="544.3" y="5.2" text-anchor="middle" font-size="15" font-family="ui-serif, Georgia, Cambria, &quot;Times New Roman&quot;, serif" font-style="italic" fill="#111827"><tspan dy="0.00">n</tspan><tspan dy="0.00" font-style="normal">-</tspan><tspan dy="0.00" font-style="normal">1</tspan></text>
+<circle cx="712.3" cy="0.0" r="26" fill="#ffffff" stroke="#374151" stroke-width="2"/>
+<text x="712.3" y="5.9" text-anchor="middle" font-size="17" font-family="ui-serif, Georgia, Cambria, &quot;Times New Roman&quot;, serif" font-style="italic" fill="#111827"><tspan dy="0.00">n</tspan></text>
+<circle cx="880.3" cy="0.0" r="26" fill="#ffffff" stroke="#374151" stroke-width="2"/>
+<text x="880.3" y="5.2" text-anchor="middle" font-size="15" font-family="ui-serif, Georgia, Cambria, &quot;Times New Roman&quot;, serif" font-style="italic" fill="#111827"><tspan dy="0.00">n</tspan><tspan dy="0.00" font-style="normal">+</tspan><tspan dy="0.00" font-style="normal">1</tspan></text>
+<path d="M22.0 -13.8 Q84.0 -52.5 146.0 -13.8" fill="none" stroke="#2563eb" stroke-width="2" marker-end="url(#ar)"/>
+<text x="84.0" y="-48.5" text-anchor="middle" font-size="16" font-family="ui-serif, Georgia, Cambria, &quot;Times New Roman&quot;, serif" font-style="italic" fill="#2563eb"><tspan dy="0.00">π</tspan><tspan dy="4.16" font-size="11" font-style="normal">0</tspan><tspan dy="-4.16">λ</tspan><tspan dy="0.00" font-style="normal">Δ</tspan><tspan dy="0.00" font-style="normal"> </tspan><tspan dy="0.00">t</tspan></text>
+<path d="M146.0 13.8 Q84.0 52.5 22.0 13.8" fill="none" stroke="#b45309" stroke-width="2" marker-end="url(#ar)"/>
+<text x="84.0" y="59.7" text-anchor="middle" font-size="16" font-family="ui-serif, Georgia, Cambria, &quot;Times New Roman&quot;, serif" font-style="italic" fill="#b45309"><tspan dy="0.00">π</tspan><tspan dy="4.16" font-size="11" font-style="normal">1</tspan><tspan dy="-4.16">μ</tspan><tspan dy="0.00" font-style="normal">Δ</tspan><tspan dy="0.00" font-style="normal"> </tspan><tspan dy="0.00">t</tspan></text>
+<path d="M190.0 -13.8 Q252.0 -52.5 314.0 -13.8" fill="none" stroke="#2563eb" stroke-width="2" marker-end="url(#ar)"/>
+<text x="252.0" y="-48.5" text-anchor="middle" font-size="16" font-family="ui-serif, Georgia, Cambria, &quot;Times New Roman&quot;, serif" font-style="italic" fill="#2563eb"><tspan dy="0.00">π</tspan><tspan dy="4.16" font-size="11" font-style="normal">1</tspan><tspan dy="-4.16">λ</tspan><tspan dy="0.00" font-style="normal">Δ</tspan><tspan dy="0.00" font-style="normal"> </tspan><tspan dy="0.00">t</tspan></text>
+<path d="M314.0 13.8 Q252.0 52.5 190.0 13.8" fill="none" stroke="#b45309" stroke-width="2" marker-end="url(#ar)"/>
+<text x="252.0" y="59.7" text-anchor="middle" font-size="16" font-family="ui-serif, Georgia, Cambria, &quot;Times New Roman&quot;, serif" font-style="italic" fill="#b45309"><tspan dy="0.00">π</tspan><tspan dy="4.16" font-size="11" font-style="normal">2</tspan><tspan dy="-4.16">μ</tspan><tspan dy="0.00" font-style="normal">Δ</tspan><tspan dy="0.00" font-style="normal"> </tspan><tspan dy="0.00">t</tspan></text>
+<path d="M358.0 -13.8 Q392.7 -32.6 427.4 -7.9" fill="none" stroke="#2563eb" stroke-width="2" marker-end="url(#ar)"/>
+<path d="M427.4 7.9 Q392.7 32.6 358.0 13.8" fill="none" stroke="#b45309" stroke-width="2" marker-end="url(#ar)"/>
+<path d="M452.9 -7.9 Q487.6 -32.6 522.3 -13.8" fill="none" stroke="#2563eb" stroke-width="2" marker-end="url(#ar)"/>
+<path d="M522.3 13.8 Q487.6 32.6 452.9 7.9" fill="none" stroke="#b45309" stroke-width="2" marker-end="url(#ar)"/>
+<path d="M566.4 -13.8 Q628.3 -52.5 690.3 -13.8" fill="none" stroke="#2563eb" stroke-width="2" marker-end="url(#ar)"/>
+<text x="628.3" y="-48.5" text-anchor="middle" font-size="16" font-family="ui-serif, Georgia, Cambria, &quot;Times New Roman&quot;, serif" font-style="italic" fill="#2563eb"><tspan dy="0.00">π</tspan><tspan dy="4.16" font-size="11">n</tspan><tspan dy="0.00" font-size="11" font-style="normal">-</tspan><tspan dy="0.00" font-size="11" font-style="normal">1</tspan><tspan dy="-4.16">λ</tspan><tspan dy="0.00" font-style="normal">Δ</tspan><tspan dy="0.00" font-style="normal"> </tspan><tspan dy="0.00">t</tspan></text>
+<path d="M690.3 13.8 Q628.3 52.5 566.4 13.8" fill="none" stroke="#b45309" stroke-width="2" marker-end="url(#ar)"/>
+<text x="628.3" y="59.7" text-anchor="middle" font-size="16" font-family="ui-serif, Georgia, Cambria, &quot;Times New Roman&quot;, serif" font-style="italic" fill="#b45309"><tspan dy="0.00">π</tspan><tspan dy="4.16" font-size="11">n</tspan><tspan dy="-4.16">μ</tspan><tspan dy="0.00" font-style="normal">Δ</tspan><tspan dy="0.00" font-style="normal"> </tspan><tspan dy="0.00">t</tspan></text>
+<path d="M734.4 -13.8 Q796.3 -52.5 858.3 -13.8" fill="none" stroke="#2563eb" stroke-width="2" marker-end="url(#ar)"/>
+<text x="796.3" y="-48.5" text-anchor="middle" font-size="16" font-family="ui-serif, Georgia, Cambria, &quot;Times New Roman&quot;, serif" font-style="italic" fill="#2563eb"><tspan dy="0.00">π</tspan><tspan dy="4.16" font-size="11">n</tspan><tspan dy="-4.16">λ</tspan><tspan dy="0.00" font-style="normal">Δ</tspan><tspan dy="0.00" font-style="normal"> </tspan><tspan dy="0.00">t</tspan></text>
+<path d="M858.3 13.8 Q796.3 52.5 734.4 13.8" fill="none" stroke="#b45309" stroke-width="2" marker-end="url(#ar)"/>
+<text x="796.3" y="59.7" text-anchor="middle" font-size="16" font-family="ui-serif, Georgia, Cambria, &quot;Times New Roman&quot;, serif" font-style="italic" fill="#b45309"><tspan dy="0.00">π</tspan><tspan dy="4.16" font-size="11">n</tspan><tspan dy="0.00" font-size="11" font-style="normal">+</tspan><tspan dy="0.00" font-size="11" font-style="normal">1</tspan><tspan dy="-4.16">μ</tspan><tspan dy="0.00" font-style="normal">Δ</tspan><tspan dy="0.00" font-style="normal"> </tspan><tspan dy="0.00">t</tspan></text>
+</svg>
